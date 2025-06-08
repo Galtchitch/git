@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Линейный связный список</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Линейный связный список</h1>
+        
+        <div class="controls">
+            <input type="number" id="valueInput" placeholder="Введите значение">
+            <button id="addToHead">Добавить в начало</button>
+            <button id="addToTail">Добавить в конец</button>
+            <button id="removeHead">Удалить первый</button>
+            <button id="removeTail">Удалить последний</button>
+            <input type="number" id="searchInput" placeholder="Искать значение">
+            <button id="searchBtn">Найти</button>
+            <button id="clearBtn">Очистить список</button>
+        </div>
+        
+        <div class="list-container" id="listContainer">
+            <!-- Список будет отображаться здесь -->
+        </div>
+        
+        <div class="info">
+            <p>Размер списка: <span id="sizeDisplay">0</span></p>
+            <div id="searchResult"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
