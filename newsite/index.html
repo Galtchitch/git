@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Простой Сайт</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Работа с DOM</title>
 </head>
+
 <body>
-    <header>
-        <h1>Добро пожаловать на мой сайт</h1>
-    </header>
-
-    <main>
-        <p>Этот сайт создан в качестве примера. Здесь вы можете увидеть, как работает HTML и CSS.</p>
-        <button class="btn">Узнать больше</button>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Моя Компания</p>
-    </footer>
+    <h1 id="title">Hello, world!</h1>
+        <button id="changeTitle">Change Title</button>
+        <script>
+            const title = document.getElementById('title');
+            const button = document.getElementById('changeTitle');
+            button.addEventListener('click', () => { title.textContent = 'Title has been changed!'; });
+        </script>
 </body>
 </html>
