@@ -27,4 +27,5 @@ function BalanceReader({ provider }) {
         </div>
     );
 }
+
 export default BalanceReader;
