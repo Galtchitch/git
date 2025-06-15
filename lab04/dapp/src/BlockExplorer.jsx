@@ -30,4 +30,5 @@ function BlockExplorer({ provider }) {
         </div>
     )
 }
+
 export default BlockExplorer;
